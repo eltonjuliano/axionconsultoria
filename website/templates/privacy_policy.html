@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}Política de Privacidade | Axion Consultoria{% endblock %}
+{% block meta_description %}Política de Privacidade e conformidade com a LGPD da Axion Consultoria. Saiba como cuidamos e protegemos seus dados pessoais.{% endblock %}
+
+{% block content %}
+<section class="privacy-section py-5 my-5">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <div class="card border-0 shadow-sm p-4 p-md-5">
+                    <h1 class="font-heading mb-4 text-primary text-center">Política de Privacidade</h1>
+                    <p class="text-muted text-center mb-5">Última atualização: 9 de junho de 2026</p>
+                    
+                    <div class="privacy-content">
+                        <p class="lead">A <strong>Axion Consultoria</strong> valoriza a sua privacidade e está comprometida com a proteção de seus dados pessoais. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e compartilhamos os seus dados pessoais em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD) - Lei nº 13.709/2018.</p>
+                        
+                        <hr class="my-4">
+                        
+                        <h3 class="font-heading text-secondary mt-4 mb-3">1. Quais dados coletamos?</h3>
+                        <p>Coletamos dados fornecidos diretamente por você quando preenche nossos formulários de contato ou solicita um diagnóstico empresarial. Esses dados incluem:</p>
+                        <ul>
+                            <li><strong>Nome completo:</strong> para identificar você e personalizar nosso atendimento.</li>
+                            <li><strong>E-mail:</strong> para enviar comunicações, respostas e propostas.</li>
+                            <li><strong>Telefone / WhatsApp:</strong> para contato direto e agendamento de reuniões.</li>
+                            <li><strong>Nome da Empresa e Segmento:</strong> para entender preliminarmente o seu negócio.</li>
+                            <li><strong>Faturamento aproximado:</strong> para direcionar a melhor solução de consultoria e valuation.</li>
+                            <li><strong>Mensagem adicional (opcional):</strong> qualquer informação complementar que você decida nos enviar.</li>
+                        </ul>
+
+                        <h3 class="font-heading text-secondary mt-4 mb-3">2. Qual a finalidade do tratamento de dados?</h3>
+                        <p>Os dados coletados são tratados exclusivamente para as seguintes finalidades:</p>
+                        <ul>
+                            <li>Realizar o primeiro atendimento e qualificar o contato.</li>
+                            <li>Agendar o diagnóstico empresarial gratuito.</li>
+                            <li>Elaborar propostas comerciais de serviços de valuation e consultoria estratégica.</li>
+                            <li>Enviar e-mails informativos ou novidades do mercado, caso expressamente consentido.</li>
+                            <li>Cumprir obrigações legais ou regulatórias.</li>
+                        </ul>
+
+                        <h3 class="font-heading text-secondary mt-4 mb-3">3. Consentimento</h3>
+                        <p>Ao preencher e enviar nosso formulário de contato, você manifesta o seu consentimento livre, expresso e inequívoco para que a Axion Consultoria realize o tratamento de seus dados pessoais para as finalidades descritas nesta política. Esse consentimento é a base legal do tratamento e pode ser revogado a qualquer momento por você.</p>
+
+                        <h3 class="font-heading text-secondary mt-4 mb-3">4. Compartilhamento de Dados</h3>
+                        <p>A Axion Consultoria <strong>não comercializa nem compartilha</strong> os seus dados pessoais com terceiros para fins publicitários. Os dados podem ser compartilhados apenas com:</p>
+                        <ul>
+                            <li>Prestadores de serviços de tecnologia que operam a nossa infraestrutura de servidores e banco de dados (armazenamento seguro), sob rígidas obrigações de confidencialidade.</li>
+                            <li>Autoridades judiciais, administrativas ou governamentais, em caso de determinação legal ou judicial.</li>
+                        </ul>
+
+                        <h3 class="font-heading text-secondary mt-4 mb-3">5. Segurança dos Dados</h3>
+                        <p>Implementamos medidas técnicas e organizativas de segurança para proteger seus dados pessoais contra acessos não autorizados, perda, destruição, alteração ou qualquer forma de tratamento ilícito. Usamos conexões criptografadas (HTTPS/SSL) e sistemas de controle de acesso restrito aos dados armazenados.</p>
+
+                        <h3 class="font-heading text-secondary mt-4 mb-3">6. Seus Direitos (Direitos dos Titulares)</h3>
+                        <p>Em conformidade com a LGPD, você possui os seguintes direitos em relação aos seus dados pessoais:</p>
+                        <ul>
+                            <li>Confirmar a existência de tratamento de dados.</li>
+                            <li>Acessar seus dados pessoais gratuitamente.</li>
+                            <li>Corrigir dados incompletos, inexatos ou desatualizados.</li>
+                            <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade com a LGPD.</li>
+                            <li>Revogar o seu consentimento a qualquer momento.</li>
+                        </ul>
+                        <p>Para exercer qualquer um desses direitos, entre em contato conosco através do e-mail <strong>contato@axionconsultoria.com.br</strong>.</p>
+
+                        <h3 class="font-heading text-secondary mt-4 mb-3">7. Cookies e Tecnologias de Rastreamento</h3>
+                        <p>Utilizamos cookies apenas para fins estatísticos e de funcionamento básico da nossa plataforma, como analisar o tráfego de visitas através do Google Analytics de forma anônima. Você pode desativar o uso de cookies nas configurações do seu navegador.</p>
+
+                        <h3 class="font-heading text-secondary mt-4 mb-3">8. Contato do Encarregado de Proteção de Dados (DPO)</h3>
+                        <p>Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos seus dados pessoais, envie um e-mail para o nosso encarregado no endereço: <strong>contato@axionconsultoria.com.br</strong>.</p>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <a href="{% url 'website:home' %}" class="btn btn-primary px-4 py-2"><i class="fas fa-arrow-left me-2"></i>Voltar para o Início</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

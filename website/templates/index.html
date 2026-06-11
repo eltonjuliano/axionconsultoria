@@ -1,0 +1,785 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Axion Consultoria | Estratégia e Valuation{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="inicio" class="hero-section">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <!-- Left Side Copy -->
+            <div class="col-lg-6 reveal">
+                <h1 class="hero-title mb-4">
+                    Descubra quanto sua empresa <span class="text-gold">realmente</span> vale e como aumentar esse valor.
+                </h1>
+                <p class="hero-subtitle mb-5">
+                    A Axion Consultoria ajuda empresários a identificar oportunidades de crescimento, corrigir falhas operacionais e preparar empresas para venda ou expansão.
+                </p>
+                <div class="d-flex flex-wrap gap-3 mb-4">
+                    <a href="#formulario" class="btn btn-hero-primary px-4 py-3">Solicitar Diagnóstico</a>
+                    <a href="#formulario" class="btn btn-hero-secondary px-4 py-3">Receber Orçamento</a>
+                </div>
+            </div>
+            
+            <!-- Right Side Mockup -->
+            <div class="col-lg-6">
+                <div class="mockups-container reveal">
+                    <!-- Laptop Mockup -->
+                    <div class="laptop-mockup">
+                        <div class="dashboard-screen">
+                            <div class="dashboard-header d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-gold"><i class="fas fa-chart-line me-2"></i>Axion Analytica</span>
+                                <span class="badge bg-secondary-subtle text-white font-monospace">v2.4</span>
+                            </div>
+                            <div class="row g-2">
+                                <div class="col-4">
+                                    <div class="dashboard-card">
+                                        <div class="text-white-50 fs-9">VALOR ESTIMADO</div>
+                                        <div class="fw-bold text-gold mt-1">R$ 2.450.000</div>
+                                        <div class="text-success fs-9 mt-1"><i class="fas fa-caret-up me-1"></i>+12.4%</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="dashboard-card">
+                                        <div class="text-white-50 fs-9">SCORE DE GESTÃO</div>
+                                        <div class="fw-bold text-white mt-1">72 <span class="text-muted">/100</span></div>
+                                        <div class="text-warning fs-9 mt-1"><i class="fas fa-exclamation-circle me-1"></i>Médio</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="dashboard-card">
+                                        <div class="text-white-50 fs-9">DEP. FUNDADOR</div>
+                                        <div class="fw-bold text-danger mt-1">Alta (85%)</div>
+                                        <div class="text-white-50 fs-9 mt-1">Fator de Risco</div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="dashboard-card">
+                                        <div class="text-white-50 fs-9 mb-1">Evolução do Faturamento</div>
+                                        <div class="dashboard-bar-chart">
+                                            <div class="bar-item blue" style="height: 30%"></div>
+                                            <div class="bar-item blue" style="height: 45%"></div>
+                                            <div class="bar-item blue" style="height: 40%"></div>
+                                            <div class="bar-item" style="height: 65%"></div>
+                                            <div class="bar-item" style="height: 85%"></div>
+                                            <div class="bar-item" style="height: 95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="dashboard-card text-center">
+                                        <div class="text-white-50 fs-9 mb-1">Distribuição de Valor</div>
+                                        <div class="dashboard-donut-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Phone Mockup -->
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="fw-bold"><i class="fas fa-circle-notch text-gold me-1 animate-spin"></i>Axion Mobile</span>
+                                <i class="fas fa-wifi text-muted"></i>
+                            </div>
+                            <div class="dashboard-card mb-2 text-center">
+                                <div class="text-white-50">Valuation Estimado</div>
+                                <div class="fs-6 fw-bold text-gold">R$ 2.450.000</div>
+                            </div>
+                            <div class="dashboard-card flex-grow-1 text-center">
+                                <span class="text-white-50">Raio-X Empresarial</span>
+                                <div class="radar-spider-web">
+                                    <div class="radar-polygon"></div>
+                                </div>
+                                <div class="row g-1 text-start mt-2">
+                                    <div class="col-6"><i class="fas fa-circle text-gold me-1 fs-10"></i>Financeiro</div>
+                                    <div class="col-6"><i class="fas fa-circle text-primary me-1 fs-10"></i>Operação</div>
+                                    <div class="col-6"><i class="fas fa-circle text-muted me-1 fs-10"></i>Gestão</div>
+                                    <div class="col-6"><i class="fas fa-circle text-info me-1 fs-10"></i>Marketing</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Features Footer Bar in Hero -->
+        <div class="row hero-features gy-4 reveal">
+            <div class="col-md-3 col-6">
+                <div class="hero-feature-item">
+                    <i class="fas fa-magnifying-glass-chart hero-feature-icon"></i>
+                    <h4 class="hero-feature-title">Diagnóstico Completo</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="hero-feature-item">
+                    <i class="fas fa-award hero-feature-icon"></i>
+                    <h4 class="hero-feature-title">Metodologia Exclusiva</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="hero-feature-item">
+                    <i class="fas fa-file-invoice-dollar hero-feature-icon"></i>
+                    <h4 class="hero-feature-title">Relatórios Executivos</h4>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="hero-feature-item">
+                    <i class="fas fa-shield-halved hero-feature-icon"></i>
+                    <h4 class="hero-feature-title">Confidencialidade Total</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção de Diferenciais -->
+<section id="servicos" class="section-padding">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Nossos Diferenciais</span>
+            <h2 class="section-title">Muito além <span class="text-gold">do valuation</span>.</h2>
+            <p class="section-subtitle">
+                Não entregamos apenas números. Realizamos uma análise completa da empresa para identificar oportunidades de crescimento, gargalos operacionais e pontos que impactam diretamente o valor do negócio.
+            </p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="differential-card">
+                    <div class="differential-icon-box">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="differential-card-title">Diagnóstico Empresarial</h3>
+                    <p class="differential-card-text">
+                        Análise profunda de todos os setores vitais da sua empresa para mapear falhas operacionais e oportunidades de otimização de lucro.
+                    </p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="differential-card">
+                    <div class="differential-icon-box">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3 class="differential-card-title">Valuation Profissional</h3>
+                    <p class="differential-card-text">
+                        Cálculo do valor real do seu negócio com base em metodologias de mercado consolidadas (Fluxo de Caixa Descontado e Múltiplos).
+                    </p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="differential-card">
+                    <div class="differential-icon-box">
+                        <i class="fas fa-user-secret"></i>
+                    </div>
+                    <h3 class="differential-card-title">Cliente Oculto</h3>
+                    <p class="differential-card-text">
+                        Avaliamos de forma anônima a experiência do seu cliente em todos os pontos de contato para identificar gargalos de atendimento e vendas.
+                    </p>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="differential-card">
+                    <div class="differential-icon-box">
+                        <i class="fas fa-sliders"></i>
+                    </div>
+                    <h3 class="differential-card-title">Análise Operacional</h3>
+                    <p class="differential-card-text">
+                        Mapeamento detalhado dos processos e fluxos produtivos ou de serviços, focando em eliminar desperdícios e aumentar a produtividade.
+                    </p>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="differential-card">
+                    <div class="differential-icon-box">
+                        <i class="fas fa-chart-line-up"></i>
+                    </div>
+                    <h3 class="differential-card-title">Plano de Crescimento</h3>
+                    <p class="differential-card-text">
+                        Criação de um planejamento estratégico de curto, médio e longo prazo com foco direto em alavancar o faturamento e o valuation.
+                    </p>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-lg-4 col-md-6 reveal">
+                <div class="differential-card">
+                    <div class="differential-icon-box">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="differential-card-title">Preparação para Venda</h3>
+                    <p class="differential-card-text">
+                        Estruturação e blindagem dos pontos críticos da empresa para torná-la atrativa a investidores, garantindo uma negociação segura.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Raio-X Empresarial -->
+<section id="raio-x" class="section-padding raiox-section">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <!-- Left Info -->
+            <div class="col-lg-5 reveal">
+                <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Raio-X Empresarial</span>
+                <h2 class="section-title mb-4">Enxergue sua empresa por um <span class="text-gold">novo ângulo</span>.</h2>
+                <p class="text-muted mb-4 fs-6">
+                    Através da nossa metodologia exclusiva, avaliamos os principais pilares da sua organização. Clique ou passe o mouse nos itens do infográfico para entender como analisamos cada área:
+                </p>
+                
+                <!-- Info Display Box -->
+                <div id="raiox-info-box-container" class="raiox-info-box">
+                    <h3 id="raiox-info-title" class="raiox-info-title">
+                        <i class="fas fa-coins me-2 text-primary"></i> Gestão Financeira
+                    </h3>
+                    <p id="raiox-info-text" class="raiox-info-text">
+                        Avaliamos a eficiência do fluxo de caixa, estrutura de custos, DRE, formação de preço, margens de lucro por produto/serviço e necessidade de capital de giro. Identificamos vazamentos financeiros e oportunidades de otimizar a lucratividade.
+                    </p>
+                </div>
+                
+                <div class="mt-4">
+                    <a href="#formulario" class="btn btn-nav-cta">Saiba mais sobre o diagnóstico</a>
+                </div>
+            </div>
+            
+            <!-- Right Infographic Diagram -->
+            <div class="col-lg-7 text-center">
+                <div class="raiox-container reveal">
+                    <!-- Radial connectors using SVG -->
+                    <svg class="raiox-svg-lines" viewBox="0 0 500 500" width="500" height="500">
+                        <!-- Circular ring connecting the outer nodes -->
+                        <circle cx="250" cy="250" r="180" fill="none" stroke="#CBD5E1" stroke-width="2" />
+                    </svg>
+                    
+                    <!-- Center Badge -->
+                    <div class="raiox-circle-center">
+                        <img src="{% static 'img/logo_symbol.png' %}" alt="Axion Logo Symbol" class="raiox-logo-symbol">
+                    </div>
+                    
+                    <!-- Nodes (Financeiro, Operação, Atendimento, Gestão, Marketing, Digital, Dependência) -->
+                    <div class="raiox-node node-financeiro active" data-node="financeiro">
+                        <i class="fas fa-coins"></i>
+                        <span class="raiox-node-label">Financeiro</span>
+                    </div>
+                    
+                    <div class="raiox-node node-operacao" data-node="operacao">
+                        <i class="fas fa-cogs"></i>
+                        <span class="raiox-node-label">Operação</span>
+                    </div>
+                    
+                    <div class="raiox-node node-atendimento" data-node="atendimento">
+                        <i class="fas fa-users-cog"></i>
+                        <span class="raiox-node-label">Atendimento</span>
+                    </div>
+                    
+                    <div class="raiox-node node-gestao" data-node="gestao">
+                        <i class="fas fa-briefcase"></i>
+                        <span class="raiox-node-label">Gestão</span>
+                    </div>
+                    
+                    <div class="raiox-node node-marketing" data-node="marketing">
+                        <i class="fas fa-bullhorn"></i>
+                        <span class="raiox-node-label">Marketing</span>
+                    </div>
+                    
+                    <div class="raiox-node node-digital" data-node="digital">
+                        <i class="fas fa-globe"></i>
+                        <span class="raiox-node-label">Presença Digital</span>
+                    </div>
+                    
+                    <div class="raiox-node node-dependencia" data-node="dependencia">
+                        <i class="fas fa-user-shield"></i>
+                        <span class="raiox-node-label">Dep. do Dono</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Como Funciona -->
+<section id="como-funciona" class="section-padding">
+    <div class="container">
+        <div class="text-center reveal mb-5">
+            <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Metodologia</span>
+            <h2 class="section-title">Um processo <span class="text-gold">simples e eficiente</span>.</h2>
+            <p class="section-subtitle">Como transformamos dados em decisões estratégicas para o seu negócio.</p>
+        </div>
+        
+        <div class="como-funciona-container">
+            <div class="como-funciona-line"></div>
+            
+            <div class="row g-4 justify-content-between">
+                <!-- Passo 1 -->
+                <div class="col-lg-2 col-md-6 como-funciona-step reveal">
+                    <div class="step-number-circle">1</div>
+                    <h3 class="step-title">Coleta de Dados</h3>
+                    <p class="step-desc">Coletamos as informações contábeis, operacionais e de vendas da empresa.</p>
+                </div>
+                <!-- Passo 2 -->
+                <div class="col-lg-2 col-md-6 como-funciona-step reveal">
+                    <div class="step-number-circle">2</div>
+                    <h3 class="step-title">Diagnóstico</h3>
+                    <p class="step-desc">Realizamos uma auditoria completa nos principais pilares de gestão.</p>
+                </div>
+                <!-- Passo 3 -->
+                <div class="col-lg-2 col-md-6 como-funciona-step reveal">
+                    <div class="step-number-circle">3</div>
+                    <h3 class="step-title">Valuation</h3>
+                    <p class="step-desc">Calculamos o valor justo de mercado utilizando múltiplos métodos.</p>
+                </div>
+                <!-- Passo 4 -->
+                <div class="col-lg-2 col-md-6 como-funciona-step reveal">
+                    <div class="step-number-circle">4</div>
+                    <h3 class="step-title">Relatório</h3>
+                    <p class="step-desc">Entregamos um relatório executivo claro, visual e estratégico.</p>
+                </div>
+                <!-- Passo 5 -->
+                <div class="col-lg-2 col-md-6 como-funciona-step reveal">
+                    <div class="step-number-circle">5</div>
+                    <h3 class="step-title">Plano de Ação</h3>
+                    <p class="step-desc">Apresentamos um roteiro prático para maximizar o valuation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Benefícios -->
+<section class="section-padding bg-light-gray">
+    <div class="container">
+        <div class="text-center reveal">
+            <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Benefícios</span>
+            <h2 class="section-title mb-4">O que você ganha com a Axion?</h2>
+            <p class="section-subtitle">Por que centenas de empresários confiam em nossa avaliação estratégica.</p>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4 reveal">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-arrow-trend-up"></i>
+                    </div>
+                    <div>
+                        <h3 class="benefit-title">Aumentar o valor da empresa</h3>
+                        <p class="benefit-text">Identificamos o que gera maior percepção de valor e trabalhamos para potencializar esses drivers de valuation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4 reveal">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-trash-can"></i>
+                    </div>
+                    <div>
+                        <h3 class="benefit-title">Identificar desperdícios</h3>
+                        <p class="benefit-text">Mapeamos ineficiências em processos e custos operacionais que reduzem diretamente a margem líquida.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4 reveal">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-arrows-spin"></i>
+                    </div>
+                    <div>
+                        <h3 class="benefit-title">Melhorar processos</h3>
+                        <p class="benefit-text">Criamos fluxogramas operacionais claros para garantir que as tarefas ocorram sem gargalos cotidianos.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-4 reveal">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <div>
+                        <h3 class="benefit-title">Reduzir riscos</h3>
+                        <p class="benefit-text">Corrigimos inconformidades legais, trabalhistas e riscos societários que desvalorizam o valuation.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="col-md-4 reveal">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <div>
+                        <h3 class="benefit-title">Preparar para venda</h3>
+                        <p class="benefit-text">Blindagem total da empresa com documentação e processos organizados para atrair e fechar com compradores.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="col-md-4 reveal">
+                <div class="benefit-card">
+                    <div class="benefit-icon-box">
+                        <i class="fas fa-check-double"></i>
+                    </div>
+                    <div>
+                        <h3 class="benefit-title">Decisões com segurança</h3>
+                        <p class="benefit-text">Apoio em análises estatísticas reais do seu mercado, permitindo expandir, fundir ou investir com segurança total.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Simulador Visual -->
+<section class="section-padding simulator-section">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <!-- Left Copy -->
+            <div class="col-lg-5 reveal">
+                <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Simulador de Valor</span>
+                <h2 class="section-title mb-4">Sua empresa pode estar valendo <span class="text-gold">mais do que você imagina</span>.</h2>
+                <p class="text-white-50 fs-6 mb-4">
+                    Nossas auditorias operacionais e correções de gargalos conseguem, em média, aumentar o valuation de pequenas e médias empresas em até <strong>50%</strong> ao eliminar dependências estruturais e expandir margens.
+                </p>
+                <p class="text-white-50 mb-0 fs-8">
+                    Use o simulador ao lado para ver uma estimativa demonstrativa do aumento potencial de valuation baseado em nossa média de resultados.
+                </p>
+            </div>
+            
+            <!-- Right Slider Simulator -->
+            <div class="col-lg-7">
+                <div class="simulator-box reveal">
+                    <h3 class="fs-5 fw-bold text-center mb-4"><i class="fas fa-calculator text-gold me-2"></i>Simulador de Valuation Potencial</h3>
+                    
+                    <!-- Slider Control -->
+                    <div class="simulator-slider-wrapper">
+                        <div class="d-flex justify-content-between font-monospace text-white-50">
+                            <span>Faturamento ou Valor Atual</span>
+                            <span id="slider-display-val" class="text-gold fw-bold">R$ 180.000</span>
+                        </div>
+                        <input type="range" id="valuation-slider" class="custom-range" min="100000" max="5000000" step="50000" value="180000">
+                        <div class="d-flex justify-content-between text-white-50 fs-8">
+                            <span>R$ 100 mil</span>
+                            <span>R$ 5 milhões</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Dynamic Cards row -->
+                    <div class="simulator-cards-container mb-4">
+                        <div class="simulator-card-item">
+                            <i class="fas fa-wallet simulator-icon"></i>
+                            <div class="simulator-card-label">Valor Percebido</div>
+                            <div id="val-percebido" class="simulator-value">R$ 180.000</div>
+                        </div>
+                        
+                        <div class="simulator-connector">+</div>
+                        
+                        <div class="simulator-card-item highlight">
+                            <i class="fas fa-chart-line-up simulator-icon"></i>
+                            <div class="simulator-card-label">Após Melhorias</div>
+                            <div id="val-melhorado" class="simulator-value text-gold">R$ 270.000</div>
+                        </div>
+                        
+                        <div class="simulator-connector">=</div>
+                        
+                        <div class="simulator-card-item">
+                            <i class="fas fa-face-smile simulator-icon"></i>
+                            <div class="simulator-card-label">Aumento Potencial</div>
+                            <div id="val-aumento" class="simulator-value">+50%</div>
+                        </div>
+                    </div>
+                    
+                    <p class="simulator-note text-center mb-0">
+                        * Apenas para fins demonstrativos com base na metodologia de Valuation da Axion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Sobre a Axion & Metric Counters -->
+<section id="sobre" class="section-padding">
+    <div class="container">
+        <div class="row align-items-center gy-5">
+            <!-- Left Image Badge -->
+            <div class="col-lg-5 text-center reveal">
+                <div class="position-relative d-inline-block">
+                    <img src="{% static 'img/logo_badge.png' %}" alt="Axion Logo Badge Large" class="img-fluid rounded-circle shadow-lg" style="max-width: 300px;">
+                    <div class="position-absolute bottom-0 end-0 bg-white p-3 rounded-circle shadow-sm border border-gold" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-award text-gold fs-2"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Copy -->
+            <div class="col-lg-7 reveal">
+                <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Quem Somos</span>
+                <h2 class="section-title mb-4">Estratégia, diagnóstico e valorização empresarial.</h2>
+                <p class="lead text-muted mb-4">
+                    A Axion Consultoria nasceu para ajudar empresários a entender melhor seus negócios, identificar oportunidades de crescimento e descobrir o real valor de suas empresas.
+                </p>
+                <p class="text-muted mb-5">
+                    Nosso foco principal é traduzir a complexidade financeira de relatórios em decisões estratégicas acionáveis. Através de auditorias de processos internos, blindagem de risco e valuation profissional, fornecemos clareza para expandir mercados, captar investimentos ou estruturar uma saída societária (venda).
+                </p>
+                
+                <!-- Indicators row -->
+                <div class="row counters-row gy-4">
+                    <div class="col-4">
+                        <div class="counter-item">
+                            <div class="counter-num" data-target="150" data-suffix="+">0</div>
+                            <p class="counter-label">Empresas Avaliadas</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="counter-item">
+                            <div class="counter-num" data-target="320" data-suffix="+">0</div>
+                            <p class="counter-label">Relatórios Entregues</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="counter-item">
+                            <div class="counter-num" data-target="50" data-suffix="%">0</div>
+                            <p class="counter-label">Potencial Identificado</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Strong CTA (Saber quanto vale hoje?) -->
+<section class="cta-strong-section py-5 text-center">
+    <div class="container py-4 reveal">
+        <h2 class="cta-strong-title mb-3">Você sabe quanto sua empresa vale hoje?</h2>
+        <p class="lead text-white-50 mb-5 max-width-600 mx-auto">
+            Não tome decisões importantes no escuro. Descubra o real valor de mercado do seu negócio e comece a aumentá-lo hoje mesmo.
+        </p>
+        <a href="#formulario" class="btn btn-cta-gold">Descobrir Valor Agora &rarr;</a>
+    </div>
+</section>
+
+<!-- Seção Formulário de Orçamento & Contato -->
+<section id="formulario" class="section-padding form-section">
+    <div class="container">
+        <div class="row gy-5">
+            <!-- Left Info Block -->
+            <div class="col-lg-5 reveal">
+                <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Diagnóstico Empresarial</span>
+                <h2 class="section-title mb-4">Solicite um <span class="text-gold">diagnóstico empresarial</span>.</h2>
+                <p class="text-muted mb-4 fs-6">
+                    Preencha o formulário e nossa equipe entrará em contato para entender seu negócio e apresentar uma proposta personalizada.
+                </p>
+                
+                <!-- Bullet list with icons -->
+                <div class="form-bullets-list mb-5">
+                    <div class="form-info-benefit">
+                        <div class="form-info-icon"><i class="fas fa-check"></i></div>
+                        <span class="form-info-text">Atendimento personalizado</span>
+                    </div>
+                    <div class="form-info-benefit">
+                        <div class="form-info-icon"><i class="fas fa-lock"></i></div>
+                        <span class="form-info-text">Confidencialidade garantida sob contrato</span>
+                    </div>
+                    <div class="form-info-benefit">
+                        <div class="form-info-icon"><i class="fas fa-calendar-check"></i></div>
+                        <span class="form-info-text">Sem custos ou compromissos iniciais</span>
+                    </div>
+                </div>
+                
+                <!-- Business Mockup overlay style -->
+                <div class="card bg-white border-0 shadow-sm overflow-hidden d-none d-md-block" style="border-radius: 12px;">
+                    <div class="p-4 d-flex align-items-center gap-3">
+                        <i class="fas fa-quote-left text-gold fs-1 opacity-25"></i>
+                        <p class="mb-0 text-muted italic font-body fs-9">
+                            "A valuation estruturada pela Axion abriu os olhos dos nossos sócios sobre as reais deficiências operacionais que possuíamos. Recomendo muito!"
+                        </p>
+                    </div>
+                    <div class="bg-secondary-subtle px-4 py-2 d-flex justify-content-between align-items-center">
+                        <span class="fw-bold text-primary fs-9">Carlos Mendes, Diretor Executivo</span>
+                        <span class="text-gold fs-10"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Form Card -->
+            <div class="col-lg-7">
+                <!-- Standard Form Card -->
+                <div class="form-card reveal">
+                    
+                    <!-- Alert containers -->
+                    <div id="form-success-message" class="alert alert-success d-none mb-4" role="alert">
+                        <!-- Handled by AJAX -->
+                    </div>
+                    <div id="form-error-message" class="alert alert-danger d-none mb-4" role="alert">
+                        <!-- Handled by AJAX -->
+                    </div>
+
+                    <!-- Hidden Success Card showing premium success states -->
+                    <div id="lead-success-card" class="text-center py-4 d-none">
+                        <div class="mb-4 d-inline-block text-success bg-success-subtle p-3 rounded-circle" style="width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-check-double fs-1"></i>
+                        </div>
+                        <h3 class="fw-bold text-primary mb-3">Solicitação Recebida!</h3>
+                        <p class="text-muted mb-4 fs-6">
+                            Agradecemos seu interesse. Nossa equipe de especialistas em estratégia e valuation entrará em contato em breve para agendar seu diagnóstico.
+                        </p>
+                        <button class="btn btn-outline-primary" onclick="window.location.reload();">Fazer outra solicitação</button>
+                    </div>
+
+                    <!-- Form Container -->
+                    <div id="lead-form-container">
+                        <form id="lead-form" method="POST" novalidate>
+                            {% csrf_token %}
+                            
+                            <div class="row g-3">
+                                <!-- Nome -->
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome completo*</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome" required>
+                                    <div class="invalid-feedback-custom" id="err-nome"></div>
+                                </div>
+                                <!-- Empresa -->
+                                <div class="col-md-6">
+                                    <label for="empresa" class="form-label">Nome da Empresa*</label>
+                                    <input type="text" id="empresa" name="empresa" class="form-control" placeholder="Sua empresa" required>
+                                    <div class="invalid-feedback-custom" id="err-empresa"></div>
+                                </div>
+                                <!-- Telefone -->
+                                <div class="col-md-6">
+                                    <label for="telefone" class="form-label">Telefone / WhatsApp*</label>
+                                    <input type="text" id="telefone" name="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+                                    <div class="invalid-feedback-custom" id="err-telefone"></div>
+                                </div>
+                                <!-- E-mail -->
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">E-mail corporativo*</label>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="voce@empresa.com.br" required>
+                                    <div class="invalid-feedback-custom" id="err-email"></div>
+                                </div>
+                                <!-- Segmento -->
+                                <div class="col-md-6">
+                                    <label for="segmento" class="form-label">Segmento*</label>
+                                    <select id="segmento" name="segmento" class="form-select" required>
+                                        <option value="">Selecione...</option>
+                                        {% for s in segmentos %}
+                                            <option value="{{ s }}">{{ s }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="invalid-feedback-custom" id="err-segmento"></div>
+                                </div>
+                                <!-- Faturamento -->
+                                <div class="col-md-6">
+                                    <label for="faturamento" class="form-label">Faturamento aproximado*</label>
+                                    <select id="faturamento" name="faturamento" class="form-select" required>
+                                        <option value="">Selecione...</option>
+                                        {% for f in faturamentos %}
+                                            <option value="{{ f }}">{{ f }}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <div class="invalid-feedback-custom" id="err-faturamento"></div>
+                                </div>
+                                <!-- Mensagem -->
+                                <div class="col-12">
+                                    <label for="mensagem" class="form-label">Mensagem (opcional)</label>
+                                    <textarea id="mensagem" name="mensagem" class="form-control" rows="4" placeholder="Conte-nos um pouco sobre sua empresa e objetivos..."></textarea>
+                                </div>
+                                
+                                <!-- LGPD Consent -->
+                                <div class="col-12 mt-4">
+                                    <div class="form-check text-start">
+                                        <input class="form-check-input" type="checkbox" id="lgpd_consentimento" name="lgpd_consentimento" required>
+                                        <label class="form-check-label text-muted fs-9" for="lgpd_consentimento">
+                                            Estou de acordo em compartilhar meus dados com a Axion Consultoria sob a <a href="{% url 'website:privacy_policy' %}" target="_blank" class="text-primary text-decoration-underline">Política de Privacidade</a> de acordo com a LGPD.*
+                                        </label>
+                                        <div class="invalid-feedback-custom" id="err-lgpd_consentimento"></div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Submit Button -->
+                                <div class="col-12 mt-4">
+                                    <button type="submit" id="btn-submit-lead" class="btn btn-form-submit py-3">Solicitar Diagnóstico</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Contato / Mapa -->
+<section id="contato" class="section-padding bg-white">
+    <div class="container">
+        <div class="text-center reveal mb-5">
+            <span class="text-uppercase text-gold font-monospace fw-bold mb-2 d-inline-block">Localização</span>
+            <h2 class="section-title">Onde nos encontrar</h2>
+            <p class="section-subtitle">Estamos estrategicamente localizados em Curitiba para atender a sua empresa.</p>
+        </div>
+        
+        <div class="row align-items-center gy-5">
+            <!-- Details Column -->
+            <div class="col-lg-5 reveal">
+                <div class="card border-0 shadow-sm p-4 bg-light-gray" style="border-radius: 12px;">
+                    <h3 class="fs-4 fw-bold mb-4 text-primary"><i class="fas fa-building text-gold me-2"></i>Sede Axion</h3>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white p-2 rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="fs-6 fw-bold mb-1 text-primary">Telefone / WhatsApp</h4>
+                            <p class="mb-0 text-muted">(41) 98494-3410</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-primary text-white p-2 rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="fs-6 fw-bold mb-1 text-primary">Endereço</h4>
+                            <p class="mb-0 text-muted">
+                                Neoville Center Mall<br>
+                                R. Pedro Gusso, 2001 - Cidade Industrial<br>
+                                Curitiba - PR, CEP 81310-300
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-start">
+                        <div class="bg-primary text-white p-2 rounded-circle me-3" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="fs-6 fw-bold mb-1 text-primary">E-mail</h4>
+                            <p class="mb-0 text-muted">contato@axionconsultoria.com.br</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Map Column -->
+            <div class="col-lg-7 reveal">
+                <div class="ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm border border-secondary-subtle">
+                    <!-- Google Maps Iframe -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3600.9991207187425!2d-49.330838684984275!3d-25.505051883754884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce2e269fbb959%3A0xe54d221c50e263d9!2sNeoville%20Center%20Mall!5e0!3m2!1spt-BR!2sbr!4v1686314815412!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
